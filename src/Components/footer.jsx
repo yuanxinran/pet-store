@@ -23,9 +23,9 @@ class FooterContent extends Component {
     return (
       <React.Fragment>
         <ul className="links">
-          {this.props.cats.map(cat => (
-            <li>{cat}</li>
-          ))}
+          {this.props.cats.map(function(cat, i) {
+            return <li key={i}>{cat}</li>;
+          })}
         </ul>
       </React.Fragment>
     );
@@ -38,7 +38,7 @@ class Footer extends Component {
       <div className="footer">
         <div className="collections">
           <div className="content">
-            <dic className="title">Connect With Us</dic>
+            <div className="title">Connect With Us</div>
             <img
               src={require("../imgs/facebook.png")}
               className="social-icon"
@@ -48,12 +48,14 @@ class Footer extends Component {
               className="social-icon"
             />
           </div>
-          {FooterContents.map(content => (
-            <div className="content">
-              <div className="title">{content.title}</div>
-              <FooterContent cats={content.links} />
-            </div>
-          ))}
+          {FooterContents.map(function(content, i) {
+            return (
+              <div className="content" key={i}>
+                <div className="title">{content.title}</div>
+                <FooterContent cats={content.links} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

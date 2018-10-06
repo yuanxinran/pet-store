@@ -1,0 +1,41 @@
+.side-filter {
+  border: 3px solid #5b2f93;
+  border-radius: 5px;
+  padding: 10px 5%;
+}
+
+.side-filter .title {
+  color: #45256f;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.side-filter .filter-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: #ede6f3;
+  border-radius: 3px;
+  padding: 3px;
+  padding-left: 7px;
+  margin-top: 10px;
+}
+
+.side-filter .filter-category {
+  margin: 3px auto;
+}
+
+.side-filter .filter-category .label {
+  margin: 0px !important;
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
+
+.side-filter .filter-category .input {
+  margin: 0px !important;
+  display: inline-block;
+  width: 20%;
+}

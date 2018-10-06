@@ -1,9 +1,17 @@
 import React, { Component } from "react";
 import "../styles/browse.css";
-import Scroller from "../Components/scroll.jsx";
-import Carousel from "../Components/carousel";
-import IMG1 from "../imgs/item1.png";
-import { getItems } from "../Components/item.js";
+import SideFilter from "../Components/filter";
+import { getItems } from "../Components/item";
+import ItemDisplay from "../Components/item_display";
+
+// class ItemRow extends Component {
+//   constructor(props){
+//     super(props)
+//   };
+//   render() {
+//     return ();
+//   }
+// }
 
 class Browse extends Component {
   state = {
@@ -12,11 +20,19 @@ class Browse extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="carouselContainer">
-          <Carousel />
+        <div className="filter-area">
+          <SideFilter />
         </div>
-        <div className="scrollerContainer">
-          <Scroller title="Best Seller" items={this.state.items} />
+        <div className="browse-area">
+          <div className="content">
+            {this.state.items.map(function(item, i) {
+              return (
+                <div className="item-container">
+                  <ItemDisplay item={item} />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </React.Fragment>
     );

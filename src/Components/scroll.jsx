@@ -10,16 +10,25 @@ class Scroller extends Component {
       <React.Fragment>
         <div className="scroller">
           <div className="title">Best Seller</div>
+
           <div className="collections">
-            {this.props.items.map(item => (
-              <div className="collection-item">
-                <div className="img">
-                  <img src={item.img} />
+            <div className="scroll-button">
+              <button class="p-button--base">&#9664;</button>
+            </div>
+            {this.props.items.map(function(item, i) {
+              return (
+                <div className="collection-item" key={i}>
+                  <div className="img">
+                    <img src={item.img} />
+                  </div>
+                  <div className="item-title">{item.title}</div>
+                  <div className="item-price">{item.price}</div>
                 </div>
-                <div className="item-title">{item.title}</div>
-                <div className="item-price">{item.price}</div>
-              </div>
-            ))}
+              );
+            })}
+            <div className="scroll-button">
+              <button class="p-button--base">&#9654;</button>
+            </div>
           </div>
         </div>
       </React.Fragment>

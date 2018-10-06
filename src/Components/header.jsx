@@ -12,7 +12,7 @@ class Search extends Component {
     let button = {
       width: "20%",
       display: "inline-block",
-      "margin-bottom": 10
+      marginBottom: 10
     };
 
     return (
@@ -57,9 +57,9 @@ class Header extends Component {
   render() {
     let iconStyle = {
       width: "90%",
-      "margin-left": "10%",
-      "margin-bottom": "10px",
-      "font-size": "0.8em"
+      marginLeft: "10%",
+      marginBottom: "10px",
+      fontSize: "0.8em"
     };
     return (
       <React.Fragment>

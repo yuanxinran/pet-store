@@ -1,5 +1,5 @@
 .scroller {
-  background-color: white;
+  background-color: #ededed;
   margin: 25px 0px;
   width: 100%;
 }
@@ -9,29 +9,45 @@
   font-weight: bold;
   text-align: left;
   color: #5b2f93;
-  margin-left: 1em;
+  padding-left: 1em;
   margin-bottom: 10px;
+  background-color: white;
+  padding-bottom: 5px;
+}
+
+.scroller .scroll-button {
+  width: 4%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+}
+
+.scroller .scroll-button button {
+  height: 100px;
+  text-align: center;
+  border: none;
+  color: ;
 }
 
 .scroller .collections {
-  background-color: #ededed;
-  padding: 20px 0px;
-  margin: auto auto;
-  margin: 10px 0px;
+  padding: 10px 10px;
+  margin: 10px auto;
+  width: 100%;
+  font-size: 0.8em;
 }
 
 .scroller .collections .collection-item {
-  width: 20%;
-  margin: 0px 1%;
-  display: inline-block;
+  width: 14%;
+  margin: 0px 2%;
+  display: table-cell;
 }
 
 .scroller .collections .collection-item img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .scroller .collections .collection-item .item-title {
-  font-size: 1em;
   color: black;
+  overflow: hidden;
 }

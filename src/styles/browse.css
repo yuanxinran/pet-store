@@ -1,3 +1,32 @@
-.scroller {
-  background-color: #ededed;
+.filter-area {
+  width: 25%;
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.browse-area {
+  width: 75%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.browse-area .content {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.browse-area .content .item-container {
+  width: 25%;
+}
+
+.item-squre {
+  width: 85%;
+  margin: auto auto;
 }

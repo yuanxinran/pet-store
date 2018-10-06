@@ -105,31 +105,32 @@
   margin-bottom: 15px;
 }
 
-.scrollerContainer {
+.scroller-container {
   width: 100%;
   margin: 10px auto;
 }
 
-.carouselContainer {
+.carousel-container {
   width: 100%;
   margin: 10px 0px;
   height: 300px;
   overflow: hidden;
 }
 
-.mainContainer {
+.main-container {
   width: 100%;
   max-width: 1440px;
   margin: auto auto;
+  padding-top: 30px;
 }
 
 .footer {
   background-color: #e7dff1;
   padding: 20px;
+  margin-top: 50px;
 }
 .footer .collections {
   width: 90%;
-  text-align: center;
   max-width: 1440px;
   margin: auto auto;
 }
@@ -144,14 +145,22 @@
   font-size: 1em;
   font-weight: bold;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .footer .content .links {
   text-align: left;
+  color: #584d59;
+  list-style: none !important;
+  padding-left: 0px;
+  margin-left: 0px;
+  font-size: 0.8em;
+  line-height: 180%;
 }
 
 .footer .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
+  margin-right: 10px;
 }

@@ -4,7 +4,7 @@ class Navbar extends Component {
   state = {};
   render() {
     return (
-      <div class="p-strip navbar">
+      <div className="p-strip navbar">
         <div className="row">
           <div className="col-3">
             {" "}

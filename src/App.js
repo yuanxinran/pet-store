@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Main from "./Views/main";
 import Browse from "./Views/browse";
 import Detail from "./Views/detail";
 import Navbar from "./Components/navbar.jsx";
@@ -13,9 +14,18 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Navbar />
-        <div class="mainContainer">
+        <div className="main-container">
           <BrowserRouter>
             <div>
+              <Route
+                exact={true}
+                path="/"
+                render={() => (
+                  <div className="App">
+                    <Main />
+                  </div>
+                )}
+              />
               <Route
                 exact={true}
                 path="/browse"
