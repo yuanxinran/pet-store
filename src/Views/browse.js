@@ -24,6 +24,22 @@ class Browse extends Component {
           <SideFilter />
         </div>
         <div className="browse-area">
+          <div className="top-area">
+            <div className="state-inform">
+              You are viewing all products for cats.
+            </div>
+            <div className="sort-bar">
+              <div className="sort-content">
+                <select>
+                  <option />
+                  <option value="Review High to Low">Review High to Low</option>
+                  <option value="Price Low to High">Price Low to High</option>
+                  <option value="Price High to Low">Price High to Low</option>
+                </select>
+                <span>Sort By:</span>
+              </div>
+            </div>
+          </div>
           <div className="content">
             {this.state.items.map(function(item, i) {
               return (

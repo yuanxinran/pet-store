@@ -13,7 +13,7 @@ class Scroller extends Component {
 
           <div className="collections">
             <div className="scroll-button">
-              <button class="p-button--base">&#9664;</button>
+              <button className="p-button--base">&#9664;</button>
             </div>
             {this.props.items.map(function(item, i) {
               return (
@@ -27,7 +27,7 @@ class Scroller extends Component {
               );
             })}
             <div className="scroll-button">
-              <button class="p-button--base">&#9654;</button>
+              <button className="p-button--base">&#9654;</button>
             </div>
           </div>
         </div>

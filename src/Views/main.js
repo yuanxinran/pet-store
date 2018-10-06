@@ -3,11 +3,11 @@ import "../styles/main.css";
 import Scroller from "../Components/scroll";
 import Carousel from "../Components/carousel";
 import IMG1 from "../imgs/item1.png";
-import { getItems } from "../Components/item";
+import { getPopularItems } from "../Components/item";
 
 class Main extends Component {
   state = {
-    items: getItems()
+    items: getPopularItems(6)
   };
   render() {
     return (

@@ -34,7 +34,7 @@ class FilterCat extends Component {
             return (
               <div className="filter-category" key={i}>
                 <input className="input" type="checkbox" id={cat} />
-                <label className="label" for={cat}>
+                <label className="label" htmlFor={cat}>
                   {cat}
                 </label>
               </div>

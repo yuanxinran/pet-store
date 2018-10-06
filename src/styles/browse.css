@@ -24,9 +24,70 @@
 
 .browse-area .content .item-container {
   width: 25%;
+  margin-bottom: 10px;
 }
 
-.item-squre {
-  width: 85%;
+.browse-area .top-area {
   margin: auto auto;
+  width: 96%;
+  margin-bottom: 20px;
+}
+
+.browse-area .state-inform {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.browse-area .sort-bar {
+  display: inline-block;
+  width: 50%;
+}
+
+.browse-area .sort-bar .sort-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.browse-area .sort-bar select {
+  width: 50%;
+}
+
+.browse-area .sort-bar span {
+  margin-right: 10px;
+}
+
+.item-square {
+  width: 85%;
+  border: 2px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 5px;
+  margin: auto auto;
+}
+
+.item-square .review .filled {
+  color: black;
+}
+
+.item-square .review .unfilled {
+  color: #ede6f3;
+}
+
+.item-square .img img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.item-square .title {
+  font-weight: bold;
+}
+
+.item-square .size {
+  color: #808080;
+  font-size: 0.8em;
 }
