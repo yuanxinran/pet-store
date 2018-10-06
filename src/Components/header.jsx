@@ -3,26 +3,18 @@ import Logo from "../imgs/logo.png";
 import User from "../imgs/user.png";
 import Cartimg from "../imgs/cart.png";
 
-const input = {
-  width: "80%",
-  display: "inline-block"
-};
-
-const button = {
-  width: "20%",
-  display: "inline-block",
-  "margin-bottom": 10
-};
-
-const iconStyle = {
-  width: "90%",
-  "margin-left": "10%",
-  "margin-bottom": "10px",
-  "font-size": "0.8em"
-};
-
 class Search extends Component {
   render() {
+    let input = {
+      width: "80%",
+      display: "inline-block"
+    };
+    let button = {
+      width: "20%",
+      display: "inline-block",
+      "margin-bottom": 10
+    };
+
     return (
       <div className="searchBar bottom-div">
         <form className="bottom-div-ele" style={input}>
@@ -63,6 +55,12 @@ class Cart extends Component {
 class Header extends Component {
   state = {};
   render() {
+    let iconStyle = {
+      width: "90%",
+      "margin-left": "10%",
+      "margin-bottom": "10px",
+      "font-size": "0.8em"
+    };
     return (
       <React.Fragment>
         <div className="row header">

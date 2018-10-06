@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./App.css";
 import Browse from "./Views/browse";
 import Detail from "./Views/detail";
-import Navbar from "./Components/navbar";
+import Navbar from "./Components/navbar.jsx";
 import Header from "./Components/header";
+import Footer from "./Components/footer";
 import { BrowserRouter, Route } from "react-router-dom";
-import { Button } from "vanilla-framework-react";
 
 class App extends Component {
   render() {
@@ -13,28 +13,31 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Navbar />
-        <BrowserRouter>
-          <div>
-            <Route
-              exact={true}
-              path="/browse"
-              render={() => (
-                <div className="App">
-                  <Browse />
-                </div>
-              )}
-            />
-            <Route
-              exact={true}
-              path="/detail"
-              render={() => (
-                <div className="App">
-                  <Detail />
-                </div>
-              )}
-            />
-          </div>
-        </BrowserRouter>
+        <div class="mainContainer">
+          <BrowserRouter>
+            <div>
+              <Route
+                exact={true}
+                path="/browse"
+                render={() => (
+                  <div className="App">
+                    <Browse />
+                  </div>
+                )}
+              />
+              <Route
+                exact={true}
+                path="/detail"
+                render={() => (
+                  <div className="App">
+                    <Detail />
+                  </div>
+                )}
+              />
+            </div>
+          </BrowserRouter>
+        </div>
+        <Footer />
       </React.Fragment>
     );
   }
