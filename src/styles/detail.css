@@ -4,6 +4,7 @@
 }
 .detail-page .breadcrumb {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .detail-page .product-img {
@@ -79,22 +80,29 @@
   margin-bottom: 20px;
 }
 
+.detail-page .selector-label {
+  font-size: 0.8em;
+  color: grey;
+  margin-bottom: 5px;
+}
+
 .detail-page .size-select-container button {
   background-color: #efe8f7;
 }
 
-.detail-page .color-select-container form input {
+.detail-page .color-select-container img {
   border: 1px solid #efe8f7;
   margin-right: 5px;
+  opacity: 0.7;
 }
 
-.detail-page .color-select-container form input:hover {
+.detail-page .color-select-container img:hover {
   border: 1px solid grey;
   margin-right: 5px;
+  opacity: 1;
 }
 
 .detail-page .counter {
-  margin-top: 20px;
   display: inline-block;
 }
 .detail-page .counter > * {
@@ -128,14 +136,22 @@
   display: inline-block;
 }
 
+.detail-page .detail-info {
+  margin-top: 50px;
+}
+
 .detail-page .detail-info .review-detail {
   width: 40%;
   display: inline-block;
+  vertical-align: top;
 }
 
 .detail-page .detail-info .description-detail {
-  width: 60%;
+  width: 55%;
+  margin-left: 5%;
   display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
 .detail-page .review-container {
@@ -204,4 +220,28 @@
   height: 40px;
   margin-left: 50px;
   font-weight: bold;
+}
+
+.detail-page .detail-info .description-detail .title {
+  font-size: 2em;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.detail-page .feature-list {
+  margin-bottom: 80px;
+}
+.detail-page .feature-list li {
+  margin: 20px 0px;
+}
+
+.detail-page th,
+td {
+  padding-left: 10px;
+}
+
+.detail-page table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
 }

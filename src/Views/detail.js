@@ -186,36 +186,10 @@ class ColorSelect extends Component {
   render() {
     return (
       <div className="color-select-container">
-        <form>
-          <input
-            type="image"
-            src={require("../imgs/red.png")}
-            alt="Submit"
-            width="48"
-            height="48"
-          />
-          <input
-            type="image"
-            src={require("../imgs/blue.png")}
-            alt="Submit"
-            width="48"
-            height="48"
-          />
-          <input
-            type="image"
-            src={require("../imgs/navy.png")}
-            alt="Submit"
-            width="48"
-            height="48"
-          />
-          <input
-            type="image"
-            src={require("../imgs/yellow.png")}
-            alt="Submit"
-            width="48"
-            height="48"
-          />
-        </form>
+        <img width="48" height="100" src={require("../imgs/red.png")} />
+        <img width="48" height="100" src={require("../imgs/navy.png")} />
+        <img width="48" height="100" src={require("../imgs/blue.png")} />
+        <img width="48" height="100" src={require("../imgs/yellow.png")} />
       </div>
     );
   }
@@ -264,10 +238,13 @@ class Detail extends Component {
             </div>
             <div className="price">{item.price}</div>
             <div className="size">
+              <div className="selector-label">Select Size</div>
               <SizeSelect />
+              <div className="selector-label">Select Color</div>
               <ColorSelect />
             </div>
-            <div class="actions">
+            <div className="actions">
+              <div className="selector-label">Quantity</div>
               <Counter />
               <button className="cart-btn">Add To Cart</button>
             </div>
@@ -276,7 +253,59 @@ class Detail extends Component {
             <div className="review-detail">
               <ReviewDetail review={item.review} />
             </div>
-            <div className="description-detail" />
+            <div className="description-detail">
+              <div className="title">Product Detail</div>
+              <ul className="feature-list">
+                <li>
+                  Chest Girth 16.5-21.5", Chest Strap 4.7", Width 5/8", Small;
+                  The chest strap is not adjustable. For a safe and fit
+                  purchase, be sure to check the neck and chest; A properly
+                  fitting collar and harness won't leave any room for your dog
+                  to chew.
+                </li>
+                <li>
+                  The harness does not stretch itself. NEVER leave your dog
+                  unattended with a harness on.
+                </li>
+                <li>
+                  Classy style in a handpicked trendy Emerald color. Nylon
+                  fabric with high density webbing to add durability.
+                </li>
+                <li>
+                  This harness is a single product. Its matching collar
+                  (B00HWQNJ2G) /leash (B00HRQGP40) sold separately
+                </li>
+                <li>
+                  All pictures are taken with our production samples from a size
+                  3/4"(wide) * 20-26"(chest).
+                </li>
+              </ul>
+
+              <div className="title">Size Table</div>
+
+              <table className="size-table">
+                <tr>
+                  <th>Size</th>
+                  <th>Metircs</th>
+                  <th>Pet Size</th>
+                </tr>
+                <tr>
+                  <td>Small</td>
+                  <td>11.8''x9.8''x13.8''</td>
+                  <td>small dog/cat</td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>11.8''x10''x15''</td>
+                  <td>medium dog/catt</td>
+                </tr>
+                <tr>
+                  <td>Large</td>
+                  <td>13''x10''x15''</td>
+                  <td>large cat</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </React.Fragment>
