@@ -7,16 +7,18 @@ class ItemDisplay extends Component {
   state = {};
 
   createStars() {
+    let review = Math.round(this.props.item.review);
     let result = "";
-    for (let i = 1; i <= this.props.item.review; i++) {
+    for (let i = 1; i <= review; i++) {
       result += "★";
     }
     return result;
   }
 
   createUnfilled() {
+    let review = Math.round(this.props.item.review);
     let result = "";
-    for (let i = this.props.item.review + 1; i <= 5; i++) {
+    for (let i = review + 1; i <= 5; i++) {
       result += "★";
     }
     return result;

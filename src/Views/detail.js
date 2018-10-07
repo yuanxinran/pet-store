@@ -2,7 +2,47 @@ import React, { Component } from "react";
 import "../styles/detail.css";
 import { getItem } from "../Components/item.js";
 
+const ItemReviews = [
+  {
+    review: 5,
+    time: "2017-7-1",
+    text:
+      "My cat love this bag so much!!! This is an item that worth buying, especially if you have a cat who loves going out! My cat just love to stay in it. "
+  },
+  {
+    review: 5,
+    time: "2018-1-5",
+    text:
+      "Great product. It looks the same as the picture above. I got the navy blue one and it looks really greate. Highly recommended. "
+  },
+  {
+    review: 4,
+    time: "2018-5-12",
+    text:
+      "Nice and standard cat bagpack. The item is a little bit expendsive though. :("
+  },
+  {
+    review: 4,
+    time: "2018-9-8",
+    text:
+      "My cat love this bag so much!!! This is an item that worth buying, especially if you have a cat who loves going out! My cat just love to stay in it. "
+  },
+  {
+    review: 4.5,
+    time: "2018-4-23",
+    text:
+      "Great product. It looks the same as the picture above. I got the navy blue one and it looks really greate. Highly recommended. "
+  },
+  {
+    review: 5,
+    time: "2017-9-2",
+    text:
+      "Great product. It looks the same as the picture above. I got the navy blue one and it looks really greate. Highly recommended. "
+  }
+];
+
 function createStars(review) {
+  review = Math.round(review);
   let result = "";
   for (let i = 1; i <= review; i++) {
     result += "★";
@@ -11,6 +51,7 @@ function createStars(review) {
 }
 
 function createUnfilled(review) {
+  review = Math.round(review);
   let result = "";
   for (let i = review + 1; i <= 5; i++) {
     result += "★";
@@ -18,23 +59,65 @@ function createUnfilled(review) {
   return result;
 }
 
+function getReviewCat(level) {
+  let star = level[0];
+  let people = level[1];
+  return (
+    <div className="cat">
+      <span className="cat-stars">
+        <span className="filled">{createStars(star)}</span>
+        <span className="unfilled">{createUnfilled(star)}</span>
+      </span>
+      <span className="people">{people}</span>
+    </div>
+  );
+}
+
+function getReviews(review) {
+  return (
+    <div className="review-list-element">
+      <div>
+        <span className="filled">{createStars(review.review)}</span>
+        <span className="unfilled">{createUnfilled(review.review)}</span>
+      </div>
+      <div className="review-txt">{review.text}</div>
+    </div>
+  );
+}
+
 class ReviewDetail extends Component {
   constructor(props) {
     super(props);
   }
+  state = {
+    levels: [[5, 132], [4, 44], [3, 23], [2, 34], [1, 10]]
+  };
+
   render() {
-    review = this.props.review;
+    let review = this.props.review;
     return (
       <div className="review-container">
         <div className="content">
+          <div className="title">Reviews</div>
           <div className="header">
             <div className="average">
+              <div className="num">{review}</div>
               <span className="filled">{createStars(review)}</span>
               <span className="unfilled">{createUnfilled(review)}</span>
             </div>
-            <div className="review-cat" />
+            <div className="review-cat">
+              {this.state.levels.map(function(level, i) {
+                return (
+                  <React.Fragment key={i}>{getReviewCat(level)}</React.Fragment>
+                );
+              })}
+            </div>
           </div>
-          <div className="" />
+          <div className="review-list">
+            {ItemReviews.map(function(r, i) {
+              return <React.Fragment key={i}>{getReviews(r)}</React.Fragment>;
+            })}
+          </div>
         </div>
       </div>
     );
@@ -162,11 +245,18 @@ class Detail extends Component {
             </ul>
           </div>
 
-          <div className="detail-img">
+          <div className="product-img">
             <img src={item.img} />
           </div>
-          <div className="detail-description">
+          <div className="product-img-small">
+            <img className="active" src={item.img} />
+            <img src={require("../imgs/small1.png")} />
+            <img src={require("../imgs/small2.png")} />
+            <img src={require("../imgs/small3.png")} />
+          </div>
+          <div className="product-description">
             <div className="title">{item.title}</div>
+            <div className="subtitle">{item.subtitle}</div>
             <div className="review">
               <span className="filled">{createStars(item.review)}</span>
               <span className="unfilled">{createUnfilled(item.review)}</span>
@@ -177,10 +267,15 @@ class Detail extends Component {
               <SizeSelect />
               <ColorSelect />
             </div>
-            <Counter />
+            <div class="actions">
+              <Counter />
+              <button className="cart-btn">Add To Cart</button>
+            </div>
           </div>
           <div className="detail-info">
-            <div className="review-detail" />
+            <div className="review-detail">
+              <ReviewDetail review={item.review} />
+            </div>
             <div className="description-detail" />
           </div>
         </div>
