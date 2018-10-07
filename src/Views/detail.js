@@ -315,7 +315,7 @@ class Detail extends Component {
               </table>
             </div>
           </div>
-          <div class="recommended">
+          <div className="recommended">
             <Scroller title="Similar Items" items={this.state.related_items} />
           </div>
         </div>

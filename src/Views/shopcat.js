@@ -3,6 +3,7 @@ import Scroller from "../Components/scroll";
 import Carousel from "../Components/carousel";
 import "../styles/shoppet.css";
 import { getPopularItems } from "../Components/item";
+import { Link } from "react-router-dom";
 
 class ShopCat extends Component {
   state = {
@@ -11,44 +12,62 @@ class ShopCat extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="carousel-container">
-          <Carousel img={require("../imgs/shopcat.png")} />
+        <div className="head-img">
+          <div className="txt">
+            <div className="title">Shop For Cats!</div>
+            <div className="subtitle">
+              Hundreds of selections of harness, bagpacks, water/food container,
+              GPS tracker
+            </div>
+          </div>
+          <div className="img">
+            <img src={require("../imgs/lilcat.png")} />
+          </div>
         </div>
         <div className="shop-pet-title">All Products</div>
         <div className="shop-pet-category">
-          <div className="cat">
-            <div className="content">
-              <div className="title">Harness</div>
-              <div className="img">
-                <img src={require("../imgs/harness.png")} />
+          <Link to="/products" className="item-link">
+            <div className="cat">
+              <div className="content">
+                <div className="title">Harness</div>
+                <div className="img">
+                  <img src={require("../imgs/harness.png")} />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="cat">
-            <div className="content">
-              <div className="title">Bagpack</div>
-              <div className="img">
-                <img src={require("../imgs/cat1.png")} />
+          </Link>
+          <Link to="/products" className="item-link">
+            <div className="cat">
+              <div className="content">
+                <div className="title">Bagpack</div>
+                <div className="img">
+                  <img src={require("../imgs/cat1.png")} />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="cat">
-            <div className="content">
-              <div className="title">Food/Water Container</div>
-              <div className="img">
-                <img src={require("../imgs/container.png")} />
+          </Link>
+          <Link to="/products" className="item-link">
+            <div className="cat">
+              <div className="content">
+                <div className="title">Food/Water Container</div>
+                <div className="img">
+                  <img src={require("../imgs/container.png")} />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="cat">
-            <div className="content">
-              <div className="title">GPS</div>
-              <div className="img">
-                <img src={require("../imgs/GPS.png")} />
+          </Link>
+          <Link to="/products" className="item-link">
+            <div className="cat">
+              <div className="content">
+                <div className="title">GPS</div>
+                <div className="img">
+                  <img src={require("../imgs/GPS.png")} />
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
+
         <div className="scroller-container">
           <Scroller title="Best Seller" items={this.state.items} />
         </div>
@@ -73,7 +92,7 @@ class ShopCat extends Component {
               Come and Explore what other cats and dogs are doring! Share your
               story with us!
             </div>
-            <div class="link">
+            <div className="link">
               <button className="purple">Explore Community</button>
             </div>
           </div>

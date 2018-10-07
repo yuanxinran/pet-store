@@ -9,15 +9,15 @@ class Navbar extends Component {
         <div className="row">
           <div className="col-3">
             {" "}
-            <Link to="/">All Products</Link>
+            <Link to="/">Shop All</Link>
           </div>
           <div className="col-3">
             {" "}
-            <Link to="/products">Shop Dogs</Link>
+            <Link to="/shopcat">Shop Dogs</Link>
           </div>
           <div className="col-3">
             {" "}
-            <Link to="/products">Shop Cats</Link>
+            <Link to="/shopcat">Shop Cats</Link>
           </div>
           <div className="col-3">
             {" "}
