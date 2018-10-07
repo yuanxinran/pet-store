@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "%3Cgithub-username%3E.github.io/%3Cproject-repo%3E/precache-manifest.3c4e4cb24c252d970e20a806bc8d23f3.js"
+  "/pet-store/precache-manifest.d9ea5e01e1288e87aeb02419cd08faf9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("%3Cgithub-username%3E.github.io/%3Cproject-repo%3E/index.html", {
+workbox.routing.registerNavigationRoute("/pet-store/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
