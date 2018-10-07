@@ -39,14 +39,16 @@ class Footer extends Component {
         <div className="collections">
           <div className="content">
             <div className="title">Connect With Us</div>
-            <img
-              src={require("../imgs/facebook.png")}
-              className="social-icon"
-            />
-            <img
-              src={require("../imgs/instagram.png")}
-              className="social-icon"
-            />
+            <div className="social-media">
+              <img
+                src={require("../imgs/facebook.png")}
+                className="social-icon"
+              />
+              <img
+                src={require("../imgs/instagram.png")}
+                className="social-icon"
+              />
+            </div>
           </div>
           {FooterContents.map(function(content, i) {
             return (

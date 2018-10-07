@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Niramit", sans-serif;
 }
 
 .App-logo {
@@ -157,10 +158,12 @@
   font-size: 0.8em;
   line-height: 180%;
 }
-
+.footer .social-media {
+  background-color: red;
+}
 .footer .social-icon {
   width: 30px;
   height: 30px;
-  display: inline-block;
   margin-right: 10px;
+  float: left;
 }

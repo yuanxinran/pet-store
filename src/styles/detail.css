@@ -1,0 +1,57 @@
+.detail-page {
+  width: 90%;
+  margin: auto auto;
+}
+.detail-page .breadcrumb {
+  text-align: left;
+}
+
+.detail-page .detail-img {
+  display: inline-block;
+  width: 30%;
+}
+
+.detail-page .detail-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.detail-page .detail-description {
+  display: inline-block;
+  width: 65%;
+  margin-left: 5%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.detail-page .detail-description .title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detail-page .review {
+  margin-bottom: 30px;
+}
+.detail-page .review .filled {
+  color: #5b2f93;
+}
+
+.detail-page .review .unfilled {
+  color: #e7dff1;
+}
+
+.detail-page .review .review-num {
+  margin-left: 10px;
+  color: #8b8e91;
+}
+
+.detail-page .detail-description .price {
+  font-size: 3em;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.detail-page .size-select-container button {
+  background-color: #efe8f7;
+}
