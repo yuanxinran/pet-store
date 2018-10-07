@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../styles/main.css";
 import Scroller from "../Components/scroll";
 import Carousel from "../Components/carousel";
-import IMG1 from "../imgs/item1.png";
 import { getPopularItems } from "../Components/item";
 
 class Main extends Component {
@@ -13,7 +12,7 @@ class Main extends Component {
     return (
       <React.Fragment>
         <div className="carousel-container">
-          <Carousel />
+          <Carousel img={require("../imgs/cat.png")} />
         </div>
         <div className="scroller-container">
           <Scroller title="Best Seller" items={this.state.items} />

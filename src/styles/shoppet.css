@@ -1,0 +1,126 @@
+.shop-pet-category {
+  display: block;
+  width: 100%;
+  margin: auto auto;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.shop-pet-title {
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: #5b2f93;
+  padding-left: 1em;
+}
+
+.shop-pet-category .cat {
+  display: inline-block;
+  width: 21%;
+  margin-right: 4%;
+  padding: 10px;
+}
+
+.shop-pet-category .cat .content {
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+.shop-pet-category .cat .content:hover {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.shop-pet-category .cat .title {
+  font-size: 1.2em;
+  color: grey;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.shop-pet-category .cat img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.community-footer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.community-footer-title {
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: #5b2f93;
+  padding-left: 1em;
+  margin-top: 100px;
+}
+
+.community-footer .img {
+  width: 20%;
+  display: inline-block;
+}
+
+.community-footer .img img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.community-footer .card-story {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.community-footer .card-story .content {
+  background-color: #ece6f4;
+
+  border-radius: 5px;
+  text-align: left;
+  padding: 15px 20px;
+  height: 200px;
+  vertical-align: top;
+  line-height: 200%;
+  font-size: 1em;
+}
+
+.community-footer .card-story .content .title {
+  color: #5b2f93;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.community-footer .community {
+  width: 40%;
+  margin-left: 5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.community-footer .community .txt {
+  color: #5b2f93;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 150%;
+}
+
+.community-footer .community .link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.community-footer .community .purple {
+  background-color: #5b2f93;
+  color: white;
+  border-radius: 5px;
+  margin-left: 0px;
+  width: 50%;
+  font-size: 1.3em;
+  height: 2em;
+}

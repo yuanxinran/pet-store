@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CatImg from "../imgs/cat.png";
+// import CatImg from "../imgs/cat.png";
 
 class Carousel extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class Carousel extends Component {
     };
     return (
       <React.Fragment>
-        <img src={CatImg} style={style} />
+        <img src={this.props.img} style={style} />
       </React.Fragment>
     );
   }
