@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/detail.css";
 import { getItem } from "../Components/item.js";
+import { Link } from "react-router-dom";
 
 const ItemReviews = [
   {
@@ -210,10 +211,10 @@ class Detail extends Component {
           <div className="breadcrumb">
             <ul className="p-breadcrumbs">
               <li className="p-breadcrumbs__item">
-                <a href="#">Shop for Cats</a>
+                <Link to="/">Shop for Cats</Link>
               </li>
               <li className="p-breadcrumbs__item">
-                <a href="#">Cats Bagpack</a>
+                <Link to="/products">Cats Bagpack</Link>
               </li>
               <li className="p-breadcrumbs__item">{item.title}</li>
             </ul>

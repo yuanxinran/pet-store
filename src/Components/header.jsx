@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from "../imgs/logo.png";
 import User from "../imgs/user.png";
 import Cartimg from "../imgs/cart.png";
+import { Link } from "react-router-dom";
 
 class Search extends Component {
   render() {
@@ -59,7 +60,9 @@ class Header extends Component {
       <React.Fragment>
         <div className="heading">
           <div className="logo">
-            <img src={Logo} />
+            <Link to="/">
+              <img src={Logo} />
+            </Link>
           </div>
           <div className="search">
             <Search />

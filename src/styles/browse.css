@@ -68,6 +68,19 @@
   border-radius: 4px;
   padding: 5px;
   margin: auto auto;
+  display: block;
+  color: black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.item-link:hover {
+  text-decoration: none !important;
+  color: black;
+}
+
+.item-square:hover {
+  border: 2px solid #5b2f93;
 }
 
 .item-square .review .filled {

@@ -17,7 +17,7 @@ class Browse extends Component {
         <div className="browse-area">
           <div className="top-area">
             <div className="state-inform">
-              You are viewing all products for cats.
+              You are viewing bagpacks for cats.
             </div>
             <div className="sort-bar">
               <div className="sort-content">

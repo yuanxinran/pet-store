@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class ItemDisplay extends Component {
   constructor(props) {
@@ -26,18 +27,20 @@ class ItemDisplay extends Component {
 
   render() {
     return (
-      <div className="item-square">
-        <div className="img">
-          <img src={this.props.item.img} />
-        </div>
-        <div className="title">{this.props.item.title}</div>
-        <div className="size">{this.props.item.size}</div>
-        <div className="price">{this.props.item.price}</div>
-        <div className="review">
-          <span className="filled">{this.createStars()}</span>
-          <span className="unfilled">{this.createUnfilled()}</span>
-        </div>
-      </div>
+      <Link to={`/products/${this.props.item._id}`} className="item-link">
+        <span className="item-square">
+          <div className="img">
+            <img src={this.props.item.img} />
+          </div>
+          <div className="title">{this.props.item.title}</div>
+          <div className="size">{this.props.item.size}</div>
+          <div className="price">{this.props.item.price}</div>
+          <div className="review">
+            <span className="filled">{this.createStars()}</span>
+            <span className="unfilled">{this.createUnfilled()}</span>
+          </div>
+        </span>
+      </Link>
     );
   }
 }
