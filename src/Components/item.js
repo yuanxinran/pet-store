@@ -82,5 +82,5 @@ export function getItems() {
 }
 
 export function getItem(n) {
-  return petItems[n];
+  return petItems.find(m => m._id === parseInt(n));
 }

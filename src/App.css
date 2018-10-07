@@ -58,17 +58,53 @@
   width: 100%;
 } */
 
+.heading {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.heading .logo {
+  width: 30%;
+  display: inline-block;
+}
+
+.heading .logo img {
+  width: 80%;
+}
+
+.heading .search {
+  width: 40%;
+  display: inline-block;
+}
+
+.heading .icon-actions {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heading .icon-actions .content {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1em;
+}
+
 .headCats {
   width: 50%;
   display: inline-block;
 }
+
 .headCats img {
-  width: 20px;
+  width: 40px;
   display: inline-block;
 }
 
 .headCats div {
   margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 10px;
   display: inline-block;
 }
 

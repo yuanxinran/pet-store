@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {};
@@ -8,19 +9,19 @@ class Navbar extends Component {
         <div className="row">
           <div className="col-3">
             {" "}
-            <a href="browse">Products</a>
+            <Link to="/products">Products</Link>
           </div>
           <div className="col-3">
             {" "}
-            <a href="browse">Shop Dogs</a>
+            <Link to="/products">Shop Dogs</Link>
           </div>
           <div className="col-3">
             {" "}
-            <a href="browse">Shop Cats</a>
+            <Link to="/products">Shop Cats</Link>
           </div>
           <div className="col-3">
             {" "}
-            <a href="browse">Muddy Paw Community</a>
+            <Link to="/products">Muddy Paw Community</Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../styles/scroller.css";
+import { Link } from "react-router-dom";
+
 class Scroller extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +21,9 @@ class Scroller extends Component {
               return (
                 <div className="collection-item" key={i}>
                   <div className="img">
-                    <img src={item.img} />
+                    <Link to={`/products/${item._id}`}>
+                      <img src={item.img} />
+                    </Link>
                   </div>
                   <div className="item-title">{item.title}</div>
                   <div className="item-price">{item.price}</div>

@@ -55,23 +55,17 @@ class Cart extends Component {
 class Header extends Component {
   state = {};
   render() {
-    let iconStyle = {
-      width: "90%",
-      marginLeft: "10%",
-      marginBottom: "10px",
-      fontSize: "0.8em"
-    };
     return (
       <React.Fragment>
-        <div className="row header">
-          <div className="col-3 bottom-column">
+        <div className="heading">
+          <div className="logo">
             <img src={Logo} />
           </div>
-          <div className="col-5 bottom-column">
+          <div className="search">
             <Search />
           </div>
-          <div className="col-3 bottom-column">
-            <div style={iconStyle}>
+          <div className="icon-actions">
+            <div className="content">
               <Account />
               <Cart />
             </div>
