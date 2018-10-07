@@ -11,7 +11,7 @@ class Scroller extends Component {
     return (
       <React.Fragment>
         <div className="scroller">
-          <div className="title">Best Seller</div>
+          <div className="title">{this.props.title}</div>
 
           <div className="collections">
             <div className="scroll-button">

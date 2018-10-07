@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../styles/detail.css";
-import { getItem } from "../Components/item.js";
+import { getItem, getPopularItems } from "../Components/item.js";
 import { Link } from "react-router-dom";
+import Scroller from "../Components/scroll.jsx";
 
 const ItemReviews = [
   {
@@ -197,7 +198,9 @@ class ColorSelect extends Component {
 }
 
 class Detail extends Component {
-  state = {};
+  state = {
+    related_items: getPopularItems(6)
+  };
   constructor(props) {
     super(props);
     this.state.item = getItem(this.props.match.params.id);
@@ -311,6 +314,9 @@ class Detail extends Component {
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="recommended">
+            <Scroller title="Similar Items" items={this.state.related_items} />
           </div>
         </div>
       </React.Fragment>

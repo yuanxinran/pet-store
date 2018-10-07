@@ -70,6 +70,42 @@ const petItems = [
     review: 4.6,
     reviewNum: 45,
     pet: "cat"
+  },
+  {
+    _id: 7,
+    img: require("../imgs/cat1.png"),
+    title: "Cat bagpack ALL SIZE",
+    subtitle:
+      "- Airline-Approved, Designed for Travel, Hiking, Walking & Outdoor Use",
+    price: "$20",
+    size: "S M L",
+    review: 4.8,
+    reviewNum: 221,
+    pet: "cat"
+  },
+  {
+    _id: 8,
+    img: require("../imgs/cat2.png"),
+    title: "Cat bagpack Transparent NN",
+    subtitle:
+      "- Airline-Approved, Designed for Travel, Hiking, Walking & Outdoor Use",
+    price: "$31-38",
+    size: "S M L",
+    review: 4.2,
+    reviewNum: 121,
+    pet: "cat"
+  },
+  {
+    _id: 9,
+    img: require("../imgs/cat3.png"),
+    title: "BAGPACK multiple colors",
+    subtitle:
+      "- Airline-Approved, Designed for Travel, Hiking, Walking & Outdoor Use",
+    price: "$20-$30",
+    size: "S M L",
+    review: 5,
+    reviewNum: 23,
+    pet: "cat"
   }
 ];
 
