@@ -86,6 +86,22 @@
   margin-bottom: 5px;
 }
 
+.detail-page .size {
+  display: block;
+}
+
+.detail-page .color {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.detail-page .actions {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
 .detail-page .size-select-container button {
   background-color: #efe8f7;
 }

@@ -240,6 +240,8 @@ class Detail extends Component {
             <div className="size">
               <div className="selector-label">Select Size</div>
               <SizeSelect />
+            </div>
+            <div className="color">
               <div className="selector-label">Select Color</div>
               <ColorSelect />
             </div>
@@ -284,26 +286,28 @@ class Detail extends Component {
               <div className="title">Size Table</div>
 
               <table className="size-table">
-                <tr>
-                  <th>Size</th>
-                  <th>Metircs</th>
-                  <th>Pet Size</th>
-                </tr>
-                <tr>
-                  <td>Small</td>
-                  <td>11.8''x9.8''x13.8''</td>
-                  <td>small dog/cat</td>
-                </tr>
-                <tr>
-                  <td>Medium</td>
-                  <td>11.8''x10''x15''</td>
-                  <td>medium dog/catt</td>
-                </tr>
-                <tr>
-                  <td>Large</td>
-                  <td>13''x10''x15''</td>
-                  <td>large cat</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>Size</th>
+                    <th>Metircs</th>
+                    <th>Pet Size</th>
+                  </tr>
+                  <tr>
+                    <td>Small</td>
+                    <td>11.8''x9.8''x13.8''</td>
+                    <td>small dog/cat</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>11.8''x10''x15''</td>
+                    <td>medium dog/catt</td>
+                  </tr>
+                  <tr>
+                    <td>Large</td>
+                    <td>13''x10''x15''</td>
+                    <td>large cat</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
