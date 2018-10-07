@@ -55,3 +55,37 @@
 .detail-page .size-select-container button {
   background-color: #efe8f7;
 }
+
+.detail-page .color-select-container form input {
+  width: 50px;
+  height: 50px;
+}
+
+.detail-page .counter {
+  margin-top: 20px;
+}
+.detail-page .counter > * {
+  display: inline-block;
+}
+
+.detail-page .count {
+  padding: 0px 10px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  padding: 5px 0px;
+  vertical-align: top;
+  border: 1px solid #caccce;
+}
+
+.detail-page .counter .btn {
+  margin: 0px;
+  height: 40px;
+  width: 30px;
+  border: 1px solid #caccce;
+}
+
+.detail-page .counter .btn.noincrease {
+  background-color: #caccce;
+  color: grey;
+}
