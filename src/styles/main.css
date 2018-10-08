@@ -8,16 +8,11 @@
   display: inline-block;
   text-align: left;
   vertical-align: top;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .main-item-category .cat-wide {
   width: 40%;
-}
-
-.main-item-category .cat .cat-content {
-  /* display: flex;
-  justify-content: center; */
 }
 
 .main-item-category .cat .cat-content .description {

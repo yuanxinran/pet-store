@@ -149,7 +149,7 @@
 
 .carousel-container {
   width: 100%;
-  margin: 10px 0px;
+  margin-bottom: 10px;
   height: 300px;
   overflow: hidden;
 }
@@ -158,7 +158,7 @@
   width: 100%;
   max-width: 1440px;
   margin: auto auto;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .footer {
