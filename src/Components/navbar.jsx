@@ -21,7 +21,7 @@ class Navbar extends Component {
           </div>
           <div className="col-3">
             {" "}
-            <Link to="/products">Muddy Paw Community</Link>
+            <Link to="/shopcat">Muddy Paw Community</Link>
           </div>
         </div>
       </div>
